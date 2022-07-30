@@ -1,0 +1,29 @@
+ED-RULES-API URL : 	
+
+Endpoint : /rules
+Request Method : POST 
+consumes : application/json 
+produces : application/json
+
+Swagger URL : https://ashokit-ed-rules-api.herokuapp.com/swagger-ui.html
+
+Note: Develop ED Module REST API to determine citizen eligibility for the plan
+
+ED module will access ED-RULES-API to execute business rules to decide citizen eligibility (Webservice communication)
+
+1) ED Module will send citizen-data as input for ED-RULES-API
+2) ED-RULES-API will execute business rules and will return plan-info
+3) ED module should store plan-info into database table (table name : eligibility_details)
+
+Note: Task should be completed by today. In tomorrow's session you guys should show your assignment.
+
+{
+  "age": 16,
+  "email": "string@",
+  "empStatus": "unemployed",
+  "income": 2000,
+  "kidsEligible": "true",
+  "name": "suersh",
+  "planName": "CCAP",
+  "ssn": "6666"
+}
